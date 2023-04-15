@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^9.19.1"
+    "firebase": "^9.19.1",
+    "sass": "^1.62.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
