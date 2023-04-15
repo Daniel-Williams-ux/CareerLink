@@ -1,6 +1,6 @@
 const LoginApi = () => {
   return (
-    <p>Hello from LoginApi</p>
+    console.log("hello from LoginApi")
   )
 }
 
