@@ -2,7 +2,7 @@ import { useState } from 'react';
 import LoginApi from '../api/AuthApi';
 import { RegisterAPI } from '../api/AuthApi';
 import '../Sass/LoginComponent.scss';
-// import LinkedinLogo from "../assets/linkedinLogo.png";
+import Logo from "../assets/careerLinks.jpg";
 
 const LoginComponent = () => {
 
@@ -18,7 +18,7 @@ const LoginComponent = () => {
   return (
     
     <div className="login-wrapper">
-{/*       <img src={LinkedinLogo} className="linkedinLogo" /> */}
+      <img src={Logo} className="carrerLinkLogo" />
 
       <div className="auth-inputs">
         <h1 className="heading">Sign in</h1>
