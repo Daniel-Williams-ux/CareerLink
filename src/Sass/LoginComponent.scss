@@ -4,4 +4,23 @@
   background-color: #DEEFE7;
   color: #159A9C;
   cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: #B4BEC9;
+}
+
+.auth-form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 150px;
+}
+
+.common-input {
+  background-color: #DEEFE7;
+  color: #159A9C;
 }
