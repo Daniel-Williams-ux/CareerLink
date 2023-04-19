@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import LoginApi from '../api/AuthApi';
-import { RegisterAPI } from '../api/AuthApi';
+import { RegisterAPI, GoogleSignInAPI } from '../api/AuthApi';
+import GoogleButton from 'react-google-button'
 import '../Sass/LoginComponent.scss';
 import Logo from "../assets/careerLinks.jpg";
 
@@ -10,11 +11,17 @@ const LoginComponent = () => {
   const login = async () => {
     try {
       let res = LoginApi(credentials.email, credentials.password);
+      toast.success("You have successfully signed-in to CareerLink")
       return res
     } catch (err) {
       return err
     }
   };
+
+  const googleSignIn = () => {
+    let response = GoogleSignInAPI();
+    console.log(response);
+  }
   return (
     
     <div className="login-wrapper">
@@ -48,6 +55,7 @@ const LoginComponent = () => {
       </div>
       <hr className="hr-text" data-content="or" />
       <div className="google-btn-container">
+        <GoogleButton  className="google-btn" onClick={googleSignIn} />
         <p className="go-to-signup">
           New to CareerLink?{" "}
           <span className="join-now" onClick={() => navigate("/register")}>
