@@ -4,9 +4,11 @@ import { RegisterAPI, GoogleSignInAPI } from '../api/AuthApi';
 import GoogleButton from 'react-google-button'
 import '../Sass/LoginComponent.scss';
 import Logo from "../assets/careerLinks.jpg";
+import { useNavigate } from "react-router-dom";
 
 const LoginComponent = () => {
 
+  let navigate = useNavigate();
   const [credentials, setCredentials] = useState({})
   const login = async () => {
     try {
@@ -20,7 +22,7 @@ const LoginComponent = () => {
 
   const googleSignIn = () => {
     let response = GoogleSignInAPI();
-    console.log(response);
+    navigate("/home")
   }
   return (
     
