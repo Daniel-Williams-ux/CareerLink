@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "antd": "^5.4.4",
     "firebase": "^9.19.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
