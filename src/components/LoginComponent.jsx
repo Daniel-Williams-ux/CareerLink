@@ -12,7 +12,7 @@ const LoginComponent = () => {
   const [credentials, setCredentials] = useState({})
   const login = async () => {
     try {
-      let res = LoginApi(credentials.email, credentials.password);
+      let res = await LoginApi(credentials.email, credentials.password);
       toast.success("You have successfully signed-in to CareerLink")
       return res
     } catch (err) {

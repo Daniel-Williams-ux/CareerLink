@@ -1,22 +1,22 @@
 import React, { useEffect } from "react";
+import { useState } from "react";
 import HomeComponent from "../components/HomeComponent";
 import { onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 import Loader from "../components/common/Loader";
-const Home = () => {
 
+export default function Home({ currentUser }) {
+  const [loading, setLoading] = useState(true);
+  let navigate = useNavigate();
   useEffect(() => {
-    let navigate = useNavigate();
     onAuthStateChanged(auth, (res) => {
       if (!res?.accessToken) {
         navigate("/");
-      } 
+      } else {
+        setLoading(false);
+      }
     });
   }, []);
-  return (
-    <HomeComponent />
-  )
+  return loading ? <Loader /> : <HomeComponent currentUser={currentUser} />;
 }
-
-export default Home;
