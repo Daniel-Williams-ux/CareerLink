@@ -1,0 +1,22 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+
+.topbar-main {
+  width: 100%;
+  height: 50px;
+  box-shadow: 30px;
+  background-color: white;
+  // margin-top: -10px;
+   // margin-left: 10px;
+} 
+
+.career-link-logo {
+  width: 45px;
+  margin-left: 20px;
+}

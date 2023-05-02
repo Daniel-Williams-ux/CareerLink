@@ -1,6 +1,10 @@
+body {
+  background-color: gray;
+}
+
 .login-wrapper {
+  
     text-align: center;
-    
     .login-wrapper-inner {
       display: flex;
       flex-direction: column;
@@ -16,8 +20,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 10px;
-      width:60%;
-      min-width: 70%;
+      width: 50%;
       margin: 0 auto;
     }
   
@@ -25,13 +28,14 @@
   .login-btn {
     width: 50%;
     height: 30px;
-    background-color: #DEEFE7;
-    color: #159A9C;
+    background-color: #339933;
+    color: #000000;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 5px;
     outline: none;
     border: none;
     margin-top: 10px;
+    font-size: 1.3rem;
   }
   
   .login-btn:hover {
@@ -83,7 +87,7 @@
     }
   
     .join-now {
-      color: green;
+      color: #339933;
       font-family: system-ui;
       cursor: pointer;
       font-size: 18px;
