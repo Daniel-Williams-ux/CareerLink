@@ -1,10 +1,14 @@
 .login-wrapper {
     text-align: center;
     
-    .auth-inputs {
-      width: 35%;
-      margin: 0 auto;
-      text-align: center;
+    .login-wrapper-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // width: 35%;
+      // margin: 0 auto;
+      // text-align: center;
     }
   
     .auth-form-inputs {
@@ -69,11 +73,11 @@
   }
 
   .google-btn-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
     .go-to-signup {
       font-size: 18px;
     }

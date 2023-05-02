@@ -29,7 +29,7 @@ const LoginComponent = () => {
     <div className="login-wrapper">
       <img src={Logo} className="carrerLinkLogo" />
 
-      <div className="auth-inputs">
+      <div className="login-wrapper-inner">
         <h1 className="heading">Sign in</h1>
         <p className="sub-heading">Keep yourself informed about developments in your professional field.</p>
 
