@@ -1,5 +1,6 @@
 import careerLinks from "../../../assets/careerLinks.jpg";
 import { AiOutlineHome, AiOutlineSearch, AiOutlineUserSwitch, AiOutlineMessage, AiOutlineBell } from "react-icons/ai";
+import user from "../../../assets/user.png";
 //   AiOutlineHome,
 //   // AiOutlineUserSwitch,
 //   // AiOutlineSearch,
@@ -19,7 +20,7 @@ const Topbar = () => {
         <AiOutlineUserSwitch size={25} />
         <AiOutlineMessage size={25} />
         <AiOutlineBell size={25} />
-
+        <img src={user} className="user-logo"/>
       </div>
     </div>
   )
